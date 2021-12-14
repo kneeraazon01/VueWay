@@ -1,16 +1,18 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineProps({
-  msg: String
-})
-const count = ref(5)
+  msg: String,
+});
+const count = ref(5);
 </script>
 
 <!--  -->
 <template>
   <h1>{{ msg }}</h1>
-  <button type="button" @click="count+=5">You biatch clicked me  {{ count }} times already</button>
+  <button type="button" @click="count += 5">
+    Ouchh!! You biatch clicked me {{ count }} times already
+  </button>
 </template>
 
 <!--  -->
@@ -18,14 +20,12 @@ const count = ref(5)
 a {
   color: #42b983;
 }
-button{
+button {
   background-color: #115c3a;
   color: #fff;
   font-size: 24px;
-  padding:6px 16px;
-  border-radius:15px;
-  border:2px solid ;
+  padding: 6px 16px;
+  border-radius: 15px;
+  border: 2px solid;
 }
 </style>
-
-
